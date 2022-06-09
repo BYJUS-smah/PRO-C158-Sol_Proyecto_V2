@@ -7,7 +7,7 @@ AFRAME.registerComponent("cursor-listener", {
     this.handleMouseLeaveEvents();
   },  
   handleMouseEnterEvents: function () {
-    // Mouse Enter Events
+    // Evento 'mouseenter' del cursor.
     this.el.addEventListener("mouseenter", () => {
       const id = this.el.getAttribute("id");
       const postersId = [
@@ -26,7 +26,7 @@ AFRAME.registerComponent("cursor-listener", {
     });
   },
   handleMouseLeaveEvents: function () {
-    // Mouse Leave Events
+    // Evento 'mouseleave' del cursor.
     this.el.addEventListener("mouseleave", () => {
       const { selectedItemId } = this.data;
       if (selectedItemId) {
